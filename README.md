@@ -1,3 +1,3 @@
-# main
+# Tecnologia Industrial, IES Portada Alta
 
-Tecnologia Industrial
+Jesús García, Andres Tous, Candela Torreblanca, Angel Ramirez, Angel Rios, Dylan Alvarez, Juan Grande, Sergio Ruiz.
