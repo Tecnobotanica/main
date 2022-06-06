@@ -109,7 +109,7 @@ p{
     color: #333;
 }
 
-@media only screen and (max-width: 536px) {
+@media only screen and (max-width: 758px) {
 
     .logo {
         font-size: 1.3rem;
