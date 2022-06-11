@@ -13,7 +13,7 @@ Jesús García, Andres Tous, Candela Torreblanca, Angel Ramirez, Angel Rios, Dyl
 
 
 ## Autores
-- Jesus Garcia (Diseño web)
+- Jesus Tello (Diseño web)
 - Dylan Alvarez (Diseño web)
 -
 -
