@@ -3,27 +3,50 @@
 
 #include <LiquidCrystal_I2C.h> // Libreria para el LCD
 #include "DHT.h"   // Librería del sensor DHT
+#include "SPI.h"  // Libreria para la comunicacion SPI
 
 #define DHTPIN 9    // Pin del sensor DHT
 #define DHTTYPE DHT11   // Definimos el tipo de sensor
 
 DHT dht(DHTPIN, DHTTYPE);    // Creamos el objeto dht
 
-
 LiquidCrystal_I2C lcd(0x27,20,4);  // Indicamos la direccion 0x27 que representa un LCD con 16 caracteres y 2 lineas
 
-void setup()
+char buff[50];
+volatile byte indx;
+volatile boolean process;
+
+void setup(void)
 {
   Serial.begin(9600);  // Iniciamos el puerto serie
+  
   dht.begin();  // Inicializamos el sensor DHT
   
   lcd.init();  // Inicializamos el LCD
   lcd.backlight(); // Activamos el backlight
+
+  pinMode(MISO, OUTPUT);
+  SPCR |=_BV(SPE);
+  indx = 0;
+  process = false;
+  SPI.attachInterrupt();
+}
+
+ISR (SPI_STC_vect) 
+{
+  byte c = SPDR;
+  if(indx < sizeof buff){
+    buff [indx++] = c;
+    if (c=='\r')
+    process = true;
+  }
 }
 
 
-void loop()
+
+void loop(void)
 {
+  {
   int h = dht.readHumidity();    // Definimos la variable h para almacenar el valor de humedad
   int t = dht.readTemperature();    // Definimos la variable t para almacenar el valor de temperatura
 
@@ -44,5 +67,12 @@ void loop()
   lcd.print((char)223);  // Imprimimos el simbolo de grados
   lcd.print("C");  // Imprimimos C
  
-  delay(500);  // Esperamos 500 milisegundos
+  delay(2000);  // Esperamos 500 milisegundos
+  }
+
+  if(process){
+    process = false;
+    Serial.println (buff);
+    indx= 0;
+  }
 }
