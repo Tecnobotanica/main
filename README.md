@@ -30,7 +30,7 @@ Jesús García, Andres Tous, Candela Torreblanca, Angel Ramirez, Angel Rios, Dyl
 - La gran parte de la programacion esta comentada y es facil de entender pero, la parte en la cual comunicamos el Arduino con el NodeMCU puede ser bastante confusa.
 
 El metodo por el cual hacemos esto es mediante comunicacion serial con ayuda de la libreria SoftwareSerial.h la cual nos simplifica mucho. Usando cualquier salida digital de nuestro arduino y conectandolas al RX y TX del NodeMCU conseguimos escribirle en el puerto serie a nuestro NodeMCU muy comodamente utilizando 
-```c++
+```C++
 monitorSerial.print(). 
 ```
 
