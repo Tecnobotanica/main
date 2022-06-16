@@ -1,30 +1,24 @@
 # Tecnologia Industrial, IES Portada Alta #
 
-Jesús García, Andres Tous, Candela Torreblanca, Angel Ramirez, Angel Rios, Dylan Alvarez, Juan Grande y Sergio Ruiz.
-
-
+Invernadero con riego automatico capaz de adaptar su cantidad de riego segun las situaciones meteorologicas, esto lo consigue mediante: dos sensores de temperatura y humedad, sensor de humedad de tierra y sensor de luminosidad. Todos los datos se pueden visualizar en un lcd o tambien en una web en tiempo real.
 
 ## Caracteristicas ##
+- Riego mediante bomba atomatica.
+- Control de temperatura mediante sensores y ventiladores.
+- Control de luminosidad mediante sensores.
 -
 -
 -
--
-
-
 
 ## Autores
-- Jesus Tello (Diseño web)
+- Jesus Tello (Diseño web, programacion del Arduino y NodeMCU, esquema electrico de conexiones con sensores y programacion del servidor web)
 - Dylan Alvarez (Diseño web)
--
--
--
-
-
-## Lista de cambios ##
-#### Version 0.1.0 (30/05/2022) ####
-- Version inicial.
-
-
+- Andres Tous
+- Candela Torreblanca
+- Angel Ramirez
+- Angel Rios
+- Juan Grande
+- Sergio Ruiz
 
 ## Programacion y conexion del Arduino y NodeMCU 8266. ##
 
