@@ -11,7 +11,7 @@ Invernadero con riego automatico capaz de adaptar su cantidad de riego segun las
 -
 
 ## Autores
-- Jesus Tello (Diseño web, programacion del Arduino y NodeMCU, esquema electrico de conexiones con sensores y programacion del servidor web)
+- Jesus Tello (Diseño web, programacion del Arduino y NodeMCU, esquema electrico de conexiones con sensores, programacion del servidor web y diseño de todas las piezas impresas en 3D)
 - Dylan Alvarez (Diseño web)
 - Andres Tous
 - Candela Torreblanca
