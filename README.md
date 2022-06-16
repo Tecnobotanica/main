@@ -26,9 +26,7 @@ Invernadero con riego automatico capaz de adaptar su cantidad de riego segun las
 La gran parte de la programacion esta comentada y es facil de entender pero, la parte en la cual comunicamos el Arduino con el NodeMCU puede ser bastante confusa.
 
 El metodo por el cual hacemos esto es mediante comunicacion serial con ayuda de la libreria SoftwareSerial.h la cual nos simplifica mucho. Usando cualquier salida digital de nuestro arduino y conectandolas al RX y TX del NodeMCU conseguimos escribirle en el puerto serie a nuestro NodeMCU muy comodamente utilizando 
-```cpp
-monitorSerial.print()
-```
+https://github.com/Tecnobotanica/main/blob/fed6eba1f96328526c1a3b14f4bd89dcc44412c4/invernadero/arduino/arduinoMaster.ino#L122
 
 Lo mas interesante que he utilizado a sido el formato en el cual se mandan los datos, a cada dato de cada sensor se le asigna una letra delante. Haciendo asi que cuando el NodeMCU reciba los datos los clasifique segun la letra que llevan delante y metiendolos en una variable que utilizaremos posteriormente para subirlo a nuestro servidor web.
 
