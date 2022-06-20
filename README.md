@@ -35,19 +35,22 @@ Lo mas interesante que he utilizado a sido el formato en el cual se mandan los d
 ### Conexiones. ###
 Las conexiones entre el Arduino y el NodeMCU son:  ``` 
 
-                                                    Arduino  ->  NodeMCU
-                                                       6     ->     Tx
-                                                       7     ->     Rx  ```
+Arduino  ->  NodeMCU
+   6     ->     Tx
+   7     ->     Rx  
                                                        
                                                        
                                                        
 Para los sensores las conexiones serian:
 
-                                        ```DHT11.1  ->  4
-                                           DHT11.2  ->  2
-                                           LDR ->  A1
-                                           LCD ->  SDA -> 11
-                                                   SCL -> 10 ```
+DHT11.1  ->  4
+
+DHT11.2  ->  2
+
+LDR ->  A1
+
+LCD ->  SDA -> 11
+        SCL -> 10 
                                                    
                                                    
                                                    
