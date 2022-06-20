@@ -40,17 +40,16 @@ Arduino  ->  NodeMCU
    7     ->     Rx  
 ```                                               
                                                        
-Para los sensores las conexiones serian:
+Para el lcd, ventiladores, rele y los sensores las conexiones serian:
 
 ```
-DHT11.1  ->  4
-
-DHT11.2  ->  2
-
-LDR ->  A1
-
-LCD ->  SDA -> 11
-        SCL -> 10        
++ DHT11.1  ->  4
++ DHT11.2  ->  2
++ LDR ->  A1
++ LCD ->  SDA -> 11
+          SCL -> 10  
++ RELÉ -> 7
++ 
 ```
                                                    
                                                    
