@@ -33,14 +33,16 @@ monitorSerial.print()
 Lo mas interesante que he utilizado a sido el formato en el cual se mandan los datos, a cada dato de cada sensor se le asigna una letra delante. Haciendo asi que cuando el NodeMCU reciba los datos los clasifique segun la letra que llevan delante y metiendolos en una variable que utilizaremos posteriormente para subirlo a nuestro servidor web.
 
 ### Conexiones. ###
-Las conexiones entre el Arduino y el NodeMCU son:   Arduino  ->  NodeMCU
+Las conexiones entre el Arduino y el NodeMCU son:  ``` Arduino  ->  NodeMCU
                                                        6     ->     Tx
-                                                       7     ->     Rx
+                                                       7     ->     Rx ```
                                                        
-Para los sensores las conexiones serian:   DHT11.1  ->  4
+Para los sensores las conexiones serian:```DHT11.1  ->  4
                                            DHT11.2  ->  2
                                            LDR ->  A1
                                            LCD ->  SDA -> 11
                                                    SCL -> 10
-                                           ...        
+                                                   
+                                                   .....
+                                           ```        
                                            
