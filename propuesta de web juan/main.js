@@ -1,0 +1,1 @@
+alert("                                          Bienvenido al juego                                                                                    Escoge personaje")
