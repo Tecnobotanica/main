@@ -1,3 +1,6 @@
+/* Made by Jesus Tello @800869 in GitHub :D */
+
+
 * {
     text-decoration: none;
     margin: 0;
@@ -127,6 +130,22 @@ p{
     overflow: hiden;
     padding-top: 10px;
     padding-bottom: 100%;
+}
+
+.volver{
+    text-decoration: none;
+    padding-top: 25px;
+    text-align: right;
+    z-index: 9;
+    color: #333;
+}
+
+.propuesta-juan {
+    text-decoration: none;
+    text-align: right;
+    padding-top: 80px;
+    z-index: 9;
+    color: #333;
 }
 
 

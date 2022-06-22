@@ -1,14 +1,14 @@
+// Made by Jesus Tello @800869 in GitHub :D
+
+
 function animateTitle() {
     i >= message.length - 1 ? (i = 0) : i++,
       (document.title = message[i]),
-      setTimeout("animateTitle()", 1000);
+      setTimeout("animateTitle()", 2000);
   }
   var message = [
       "Tecnología Industrial",
-      "Jesús García, Andres Tous, Candela Torreblanca, Angel Ramirez, Angel Rios, Dylan Alvarez, Juan Grande, Sergio Ruiz."
+      "Invernadero Automático"
     ],
     i = 0;
   animateTitle();
-
-  
-  

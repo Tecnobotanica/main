@@ -1,3 +1,5 @@
+//Made by Jesus Tello @800869 in GitHub :D
+
 $(document).ready(function () {
     var menuBtn = $('.menu-icon'),
         menu = $('.navigation ul');
