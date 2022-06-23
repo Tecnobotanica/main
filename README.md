@@ -9,14 +9,14 @@ Invernadero con riego automatico capaz de adaptar su cantidad de riego segun las
 - Etc.
 
 ## Autores
-- Jesus Tello (Diseño web, programacion del Arduino y NodeMCU, esquema electrico de conexiones con sensores, programacion del servidor web y diseño de todas las piezas impresas en 3D)
+- Jesus Tello (Diseño web, diseño de la estructura, carpinteria, documentacion, programacion del Arduino y NodeMCU, esquema electrico de conexiones con sensores, programacion del servidor web y diseño de todas las piezas impresas en 3D)
 - Dylan Alvarez (Diseño web)
-- Andres Tous
-- Candela Torreblanca
-- Angel Ramirez
-- Angel Rios
-- Juan Grande
-- Sergio Ruiz
+- Andres Tous (Carpinteria, jardineria, electronica y documentacion)
+- Candela Torreblanca (Carpinteria, jardineria y electronica)
+- Angel Ramirez (Carpinteria)
+- Angel Rios (Carpinteria, documentacion)
+- Juan Grande (Carpinteria, jardineria, electronica y documentacion)
+- Sergio Ruiz (Carpinteria y electronica)
 
 ## Programacion y conexion del Arduino y NodeMCU 8266. ##
 
@@ -47,7 +47,6 @@ Para el lcd, ventiladores, rele y los sensores las conexiones serian:
 + LCD  ----->  SDA --> 11
                SCL --> 10  
 + RELÉ ----->  7
-+ 
 ```
                                                    
                                                    
