@@ -29,11 +29,339 @@
             </div>
         </header>
         <main class="main">
+            <div class="container">                               
+                <div>
+                    <h1>DATOS GENERALES.</h1>
+                    <br>
+
+                    <p>
+                        El problema surgió cuando nos íbamos a ir de viaje de fin de curso durante una semana. Uno de nuestros amigos, estaba cultivando unas plantas para un trabajo de jardinería, y durante la semana de la excursión, no las podía cuidar y no tenía a nadie cercano que las pudiese cuidar. 
+                    </p>
+                    <p>
+                        Nuestra solución a este problema fue crear un riego por goteo automático. La función de este era regar las plantas de forma automática mientras el dueño de estas, estaba de excursión. El invernadero, tendría sensores de temperatura y humedad, tanto exterior como interior; un sensor de humedad de tierra y un sensor de intensidad lumínica, a parte de un sistema de riego que se activa dependiendo de las variables de humedad de tierra e intensidad lumínica, y un conjunto de ventiladores que harán flujo de aire, para bajar la temperatura. Todo estas características, sería visible en una pantalla LCD situada en un lado del invernadero, o desde una página web que actualiza las variables cada cierto tiempo. Todo esto, estaría soportado mediante un arduino.
+                    </p>
+
+                    <!-- ///////////////////////////////////////////// -->
+
+                    <h1>BENEFICIARIO DEL PROYECTO.</h1>
+                    <br>
+
+                    <p>
+                        Este proyecto, podría ir destinados para todas aquellas personas que no tengan tiempo para cuidar las plantas, también puede ir destinados, a personas que le gusta la tecnología y que sientan curiosidad por la programación y el montaje eléctrico. Claramente, va destinado a aquellas personas que les gustan las plantas. Este proyecto también puede servir a modo de experimento para alumnos de tecnología o semejantes.                    </p>
+                    <p>
+                        Si tuviéramos que poner un ratio de edad, a las que este proyecto estaría destinado, sería de doce años a más de cincuenta años, sería unisex ya que a cualquier persona le puede interesar la tecnología indendiente de su sexo.
+                    </p>                    
+                    <br>
+
+
+                    <!-- ///////////////////////////////////////////// -->
+
+
+                    <h1>EJECUCIÓN.</h1>
+                    <br>
+
+                    <p>
+                        El resultado es un invernadero con riego por goteo automático. El funcionamiento del invernadero en el caso del riego es el siguiente, el arduino da las órdenes, estas órdenes las da dependiendo de dos variables, la intensidad de luz y la humedad de la tierra, para que solo se riegue cuando la intensidad lumínica sea baja (noche) y cuando la humedad de la tierra no supera el 30%. En el caso de aliviar las temperaturas, nuestro arduino solo responde a la variable de temperatura,  si en el interior la temperatura se eleva a más de 22ºC se activaría los ventiladores para aumentar la circulación del aire. El invernadero funciona de tal manera que se haga lo mejor posible el cuidado de la planta. 
+                    </p>
+                    <p>
+                        Este riego por goteo automático, se hizo gracias a la unión de un sistema eléctrico, un sistema de riego y por supuesto una estructura que soportará todo esto.
+                    </p>
+                    <p>
+                        1. El sistema eléctrico consta de un arduino, que controla todos los sensores, los ventiladores y la bomba de agua. Las piezas del sistema son las siguientes:
+                    </p>
+                    <li>
+                        Dos sensores dht11 (humedad, temperatura), un sensor de humedad de tierra y un sensor de intensidad lumínica.
+                    </li>
+                    <li>
+                        Dos Ventiladores 5V, estos ayudarán para bajar la temperatura del interior del arduino haciendo corriente de aire.
+                    </li>
+                    <li>
+                        Bomba de agua 5V.
+                    </li>
+                    <li>
+                        Dos módulos relés, es un interruptor electrónico que funciona mediante códigos que sirven para cortar o dejar pasar corriente. 
+                    </li>
+                    <li>
+                        LDR (fotoresistencia)
+                    </li>
+                    <li>
+                        Arduino UNO, es el que da las órdenes a las piezas electrónicas que se le han puesto en la programación.
+                    </li>
+                    <li>
+                        Node MCU se encarga de subir la web al servidor
+                    </li>
+                    <li>
+                        3 resistencias de 10K
+                    </li>
+                    <li>
+                        LCD I2C, aquí se verán los datos que den nuestros sensores.
+                    </li>
+                    <br>
+
+
+                    <!-- ///////////////////////////////////////////// -->
+
+                    
+                    <h4>
+                        2. El sistema de riego consta de:
+                    </h4>
+                    <br>
+
+                    <li>
+                        Tubos de sección cuatro milímetros por los que pasa el agua.
+                    </li>
+                    <li>
+                        Bomba de agua, esta da la potencia para llevar el agua del estanque a las tuberías hasta llegar a la tierra.
+                    </li>
+                    <li>
+                        Varios codos para hacer los giros de los tubos.
+                    </li>
+                    <li>
+                        Unas bifurcaciones para dividir los tubos.
+                    </li>
+                    <li>
+                        Aspersores, por el cual el agua riega las plantas.
+                    </li>
+                    <br>
+
+
+                    <!-- ///////////////////////////////////////////// -->
+
+                    <h4>
+                        3. Estructura:
+                    </h4>
+                    <br>
+
+                    <li>
+                        Chapón, con el que hicimos todo el soporte donde va colocado el invernadero y a su vez los dos sistemas anteriormente nombrados.
+                    </li>
+                    <li>
+                        Escuadras, con las que nos aseguramos de que tenga una buena estabilidad.
+                    </li>
+                    <li>
+                        Tornillos.
+                    </li>
+                    <li>
+                        Bisagras, ya que la estructura consta de una puerta para acceder al sistema electrónico.
+                    </li>
+                    <li>
+                        Una bandeja de plástico lo suficientemente profunda donde se sitúa el agua.
+                    </li>
+                    <li>
+                        Varillas roscadas con las que hicimos la estructura del invernadero.
+                    </li>
+                    <li>
+                        Plástico para forrar los libros para cubrir el invernadero.
+                    </li>
+                    <li>
+                        Bridas.
+                    </li>
+                    <br>
+
+
+                    <!-- ///////////////////////////////////////////// -->
+
+                    <h3>
+                        Lo que se hizo:
+                    </h3>
+                    <br>
+
+                    <p>
+                        Día 1. Análisis del proyecto.
+
+                    </p>
+                    <p>
+                        Día 2. Gantt, Boceto físico, Boceto lógico.
+                    </p>
+                    <p>
+                        Día 3. Boceto físico, Boceto lógico.
+                    </p>
+                    <p>
+                        Días 4 y 5. Diseño físico, Análisis materiales físicos, Análisis materiales lógicos, Programación.
+                    </p>
+                    <p>
+                        Día 6. Diseño físico, Obtención de materiales físicos, Preparación de materiales físicos, Programación.
+                    </p>
+                    <p>
+                        Días 8 y 9. Montaje físico, Programación.
+                    </p>
+                    <p>
+                        Día 10. Obtención de materiales lógicos, Montaje físico, Preparación de materiales lógicos, Programación.
+                    </p>
+                    <p>
+                        Días 11, 12. 13, 15, 20 y 22. Programación, Montaje físico, Montaje circuito.
+                    </p>
+                    <p>
+                        Días 14 y 21. Diseño 3D, Programación, Montaje físico, Montaje circuito.
+                    </p>
+                    <p>
+                        Día 16. Documentación, Montaje físico, Programación
+                    </p>
+                    <p>
+                        Días 17, 18 y 19. Montaje físico, Programación.
+                    </p>
+                    <p>
+                        Días 23, 24 y 25. Diseño tinkercad, Documentación, Programación, Montaje físico, Montaje circuito.
+                    </p>
+                    <br>
+
+
+                    <!-- ///////////////////////////////////////////// -->
+
+                    <h3>
+                        Lo que se preveía hacer:
+                    </h3>
+                    <br>
+
+                    <p>
+                        Día 1. Boceto físico y análisis de materiales.
+                    </p>
+                    <p>
+                        Día 2. Boceto lógico y obtención de materiales.
+                    </p>
+                    <p>
+                        Día 3. Diseño tinkercad y preparación de materiales.
+                    </p>
+                    <p>
+                        Día 4. Gantt y programación.
+                    </p>
+                    <p>
+                        Día 5. Gantt y diseño físico.
+                    </p>
+                    <p>
+                        Día 6. Diseño físico.
+                    </p>
+                    <p>
+                        Día 7. Montaje físico.
+                    </p>
+                    <p>
+                        Día 8. Montaje circuito.
+                    </p>
+                    <p>
+                        Día 9. Montaje circuito y documentación
+                    </p>
+                    <br>
+
+
+                    <!-- ///////////////////////////////////////////// -->
+
+                    <h2>METODOLOGÍA.</h2>
+                    <br>
+
+                    <p>
+                        Esto es abrir lo que se ha hablado del apartado anterior, explicando específicamente que se hizo cada día. 
+                    </p>
+                    <p>
+                        Día 1. Se inicia la idea del proyecto, se prepara un boceto con unas medidas aproximadas.
+                    </p>
+                    <p>
+                        Día 2. Se termina el boceto final y se compran los materiales.
+                    </p>
+                    <p>
+                        Día 3. Se empieza con las medidas de la base y la estructura, y se empieza a cortar los materiales.
+                    </p>
+                    <p>
+                        Día 4. Se lijan las imperfecciones de la base, se hacen agujeros en los lados de la base para colocar escuadras en la parte inferior y se empiezan a medir y cortar las varillas para la estructura del invernadero. También se prepara el boceto del logo.
+                    </p>
+                    <p>
+                        Día 5. Se continua con la estructura del invernadero, lijando y colocando escuadras. Además se corta más materiales para la parte superior de la base. Se hacen el Gantt.
+                    </p>
+                    <p>
+                        Día 6. Se sigue cortando varillas para la estructura y se planea la posición de las mismas para que el invernadero quede bien sostenido.
+                    </p>
+                    <p>
+                        Día 7. Se corta el plástico que cubre la zona inferior del invernadero y se lija la zona donde va colocado.
+                    </p>
+                    <p>
+                        Día 8. Se monta la estructura del invernadero y se termina la parte inferior del invernadero.
+                    </p>
+                    <p>
+                        Día 9. Se empieza a montar el circuito, pelando cables y situando por donde van a ir internamente en el invernadero.
+                    </p>
+                    <p>
+                        Día 10. Una vez todos los cables y dispositivos situados, se monta el circuito.
+                    </p>
+                    <p>
+                        Día 11. Se hace la documentación.
+                    </p>
+                    <br>
+
+
+                    <!-- ///////////////////////////////////////////// -->
+
+                    <h1>IMPACTO REAL DEL PROYECTO.</h1>
+                    <br>
+
+                    <p>
+                        Al principio estábamos separados en dos grupos y cada grupo tenía hecho ya sus bocetos de cómo iban a hacerlo más o menos. Cuando se nos dio la opción de hacer un solo invernadero y juntarnos, cogimos las ideas de un grupo y las de otro y la juntamos, por ejemplo, el grupo A (Juan, Sergio, Ángel Ríos y Dylan) tenían pensado ponerle un sistema de ventilación para que el aire entrase y saliese, cosa que el grupo de B (Candela, Jesús, Ángel Ramírez y Andrés) no lo había pensado, o el tema de sensores y electrónica, que se mantuvo el del grupo B.
+                    </p>
+                    <p>
+                        Una vez hecho el boceto por los dos grupos en conjunto, fueron surgiendo sobre la marcha nuevos cambios:
+                    </p>
+                    <li>
+                        No sabíamos cómo juntar las esquinas de la estructura del invernadero, así que Jesús se le ocurrio la idea de hacer los vértices del invernadero con la impresora 3D, las diseño, y se imprimieron.
+                    </li>
+                    <li>
+                        No sabíamos cómo cubrir la estructura del invernadero y al final se nos ocurrió ponerle plástico que se usa para forrar los libros.
+                    </li>                    
+                    <li>
+                        El estanque se tenía pensado que iba a ser de otra manera, pero conforme la marcha lo fuimos modificando.
+                    </li>
+                    <br>
+
+
+                    <!-- ///////////////////////////////////////////// -->
+
+                    <h1>CONCLUSIONES</h1>
+                    <br>
+
+                    <p>
+                        Debilidades: Las zonas de sellado, potencia de la bomba de agua y la estética del trabajo en general.
+                    </p>
+                    <p>
+                        Fortalezas: Lo mejor de nuestro trabajo ha sido toda la parte electrónica ( como el arduino, los sensores, la bomba de agua, el cableado…) y la parte de programación.
+                    </p>
+                    <p>
+                        Amenazas: En general, la mayor amenaza o el mayor problema que hemos tenido ha sido la falta de tiempo.
+                    </p>
+                    <p>
+                        Mejoras:
+                    </p>
+                    <li>
+                        El material usado para cubrir el invernadero lo cambiaría por uno más resistente. Por ejemplo metacrilato. 
+                    </li>                    
+                    <li>
+                        Que el tamaño del invernadero fuese más grande para poder albergar plantas de mayor tamaño y variedad.
+                    </li>
+                    <li>
+                        Las piezas electrónicas dadas por el instituto tendrían que haber sido de mayor calidad.
+                    </li>
+                    <li>
+                        Sellar de mejor forma todo.
+                    </li>
+                    <br>
+
+                    <!--/////////////  IMAGENES ///////////////////-->
+
+                    <img class="img"  src="img/fotos/img1.jpeg">
+                    <img class="img"  src="img/fotos/img2.jpeg">
+                    <img class="img"  src="img/fotos/img3.jpeg">
+                    <img class="img"  src="img/fotos/img4.jpeg">
+                    <img class="img"  src="img/fotos/img5.jpeg">
+                    <img class="img"  src="img/fotos/img6.jpeg">
+                    <img class="img"  src="img/fotos/img7.jpeg">
+                    <img class="img"  src="img/fotos/img8.jpeg">
+                    <img class="img"  src="img/fotos/img9.jpeg">
+                    <img class="img"  src="img/fotos/img10.jpeg">
+                    <img class="img"  src="img/fotos/img11.jpeg">
+                    <img class="img"  src="img/fotos/img12.jpeg">
+                    <img class="img"  src="img/fotos/img13.jpeg">
+
+                </div>
+                <div class="volver">
+                    <p><a class="volver" href="index.html">Para volver atras pulsa en 𝑻𝒆𝒄𝒏𝒐𝒃𝒐𝒕𝒂𝒏𝒊𝒄𝒂</a></p>
+                </div>
+            </div>
         </main>
-      <!--  <footer class="footer">
-            <div class="container">
-            <p>Made by Jesús García, Andres Tous, Candela Torreblanca, Angel Ramirez, Angel Rios, Dylan Alvarez, Juan Grande y Sergio Ruiz.</p>
-        </footer> -->
     </body>
 </html>
-

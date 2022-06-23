@@ -111,6 +111,11 @@ p{
     z-index: 9;
 }
 
+.logo-ico{
+    border-radius: 20px;
+}
+
+
 .presupuesto {
     position: absolute;
     width: 100%;

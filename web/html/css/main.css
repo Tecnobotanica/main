@@ -18,10 +18,10 @@ body{
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 2.2rem;
     line-height: 2rem;
     margin: 0;
-    padding: 0;
+    padding-top: 1rem;
 }
 
 p{
@@ -96,23 +96,21 @@ p{
             }
 
 .main {
-    padding-top: 12rem
+    padding-top: 8rem;
 }
 
 .gant{
-    display: block;
-    overflow: hidden;
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    max-height: 35.7rem;
+    max-height: 37.6rem;
     z-index: 9;
 }
 
 .presupuesto {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     max-height: 45.9rem;
@@ -122,14 +120,13 @@ p{
 .excel-responsive{
     position: relative;
     overflow: hiden;
-    padding-top: 42.5%;
+    padding-top: 43.9%;
 }
 
 .excel-responsive2{
     position: relative;
     overflow: hiden;
-    padding-top: 10px;
-    padding-bottom: 100%;
+    padding-top: 57%;
 }
 
 .volver{
@@ -141,11 +138,20 @@ p{
 }
 
 .propuesta-juan {
-    text-decoration: none;
+    position: fixed;
     text-align: right;
-    padding-top: 80px;
+    padding-right: 11%;
+    padding-left: 7%;
+    right: 0;
+    bottom: 8.5rem;
     z-index: 9;
+}
+
+.propuesta-juan-texto{
+    font-size: 1rem;
     color: #333;
+    text-align: right;
+    z-index: 9;
 }
 
 
@@ -153,7 +159,7 @@ p{
     background-color: #f2f2f2;
     font-size: 1.2rem;
     text-align: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     margin: 0;
     padding: 2rem;
@@ -164,6 +170,19 @@ p{
     font-size: 1.2rem;
     line-height: 1.4rem;
     color: #333;
+}
+
+.parrafo2{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #333;
+    padding-bottom: 1rem;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media only screen and (max-width: 758px) {
@@ -210,4 +229,43 @@ p{
                 background: #4a4a4a;
                 }
     
+}
+
+
+@media only screen and (max-width: 450px) {
+    .propuesta-juan {
+        position: fixed;
+        text-align: right;
+        padding-right: 11%;
+        padding-left: 7%;
+        right: 0;
+        padding-top: 10rem;
+        bottom: 12rem;
+        z-index: 9;
+    }
+
+    .parrafo{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        color: #333;
+    }
+
+    h1{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 0;
+        padding-top: 1rem;
+    }
+
+    .footer {
+        background-color: #f2f2f2;
+        font-size: 1rem;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        margin: 0;
+        padding: 2rem;
+        width: 100%;
+    }
+
 }
