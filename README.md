@@ -6,9 +6,7 @@ Invernadero con riego automatico capaz de adaptar su cantidad de riego segun las
 - Riego mediante bomba atomatica.
 - Control de temperatura mediante sensores y ventiladores.
 - Control de luminosidad mediante sensores.
--
--
--
+- Etc.
 
 ## Autores
 - Jesus Tello (Diseño web, programacion del Arduino y NodeMCU, esquema electrico de conexiones con sensores, programacion del servidor web y diseño de todas las piezas impresas en 3D)
