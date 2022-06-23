@@ -47,7 +47,6 @@ Para el lcd, ventiladores, rele y los sensores las conexiones serian:
 + LCD  ----->  SDA --> 11
                SCL --> 10  
 + RELÉ ----->  7
-+ 
 ```
                                                    
                                                    
