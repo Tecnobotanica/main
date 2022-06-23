@@ -141,9 +141,9 @@ p{
     position: fixed;
     text-align: right;
     padding-right: 11%;
+    bottom: 8.5rem;
     padding-left: 7%;
     right: 0;
-    bottom: 8.5rem;
     z-index: 9;
 }
 
@@ -239,7 +239,6 @@ p{
         padding-right: 11%;
         padding-left: 7%;
         right: 0;
-        padding-top: 10rem;
         bottom: 12rem;
         z-index: 9;
     }
