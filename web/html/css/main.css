@@ -220,7 +220,7 @@ p{
     
             .navigation ul li a {
             display: block;
-            padding: 0.5rem 0;
+            padding: 0.5rem 0.5rem;
             transition: all 0.4s linear;
             border-radius: 5px;
             }
